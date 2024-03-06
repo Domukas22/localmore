@@ -3,13 +3,13 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const trStaticSchema = new Schema(
+const staticTranslations_SCHEMA = new Schema(
   {
     name: {
       en: { type: String, required: true },
       de: { type: String, required: true },
     },
-    subName: {
+    subname: {
       en: { type: String, required: true },
       de: { type: String, required: true },
     },
@@ -25,16 +25,19 @@ const trStaticSchema = new Schema(
         de: { type: String, required: true },
       },
     ],
-    aboutTitle: {
+    about_TITLE: {
       en: { type: String, required: true },
       de: { type: String, required: true },
     },
-    aboutParag: {
+    about_PARAG: {
       en: { type: String, required: true },
       de: { type: String, required: true },
     },
   },
-  { collection: "tr_static" }
+  { timestamps: true }
 );
 
-module.exports = mongoose.model("tr_static", trStaticSchema);
+module.exports = mongoose.model(
+  "static_translations",
+  staticTranslations_SCHEMA
+);

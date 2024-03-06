@@ -18,7 +18,7 @@ const uri = process.env.MONGODB_URI;
 
 CONNECTdatabase(uri);
 app.use(cors()); // let React communicate with backend
-// app.use(limiter); // 20 requests per minute from same ip, prevent abuse of your API
+app.use(limiter); // 20 requests per minute from same ip, prevent abuse of your API
 app.use(logger("dev")); // Logging middleware to log HTTP requests, which is useful for debugging
 app.use(express.json());
 app.use(express.urlencoded({ extended: false })); // Built-in middlewares to parse incoming request bodies in JSON and URL-encoded format

@@ -1,0 +1,11 @@
+// create a new uiTranslatio based on the given schema and the given info
+
+POST  http://localhost:3001/db/tags/65e8d8c2c0287cc5908bc09b/delete
+
+
+
+
+
+
+###
+
