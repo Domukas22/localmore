@@ -1,11 +1,32 @@
-// create a new uiTranslatio based on the given schema and the given info
+// create a tagUSage document
 
-POST  http://localhost:3001/db/tags/65e8d8c2c0287cc5908bc09b/delete
+POST  http://localhost:3001/db/tagUsages
+Content-Type: application/json
 
-
-
-
+{
+  "desc": "Tag Basketball in category Sportsfields",
+  "tag_ID": "65e849898a18d3039e02477a",
+  "category_ID": "65eafb87ca6736915843a8c4",
+  "group_ID": "65e87860b246c31aec3163fa",
+  "count": 1
+}
 
 
 ###
+
+PUT  http://localhost:3001/db/countries/65e982e6315dd3b7731f9417
+Content-Type: application/json
+
+{
+  "name": {
+    "en": "UPDATE",
+    "de": "tes"
+  }
+}
+
+###
+
+DELETE  http://localhost:3001/db/countries/65e97e25095ca3694eca6844
+###
+
 

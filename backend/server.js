@@ -55,22 +55,3 @@ app.listen(port, () => {
 });
 
 //
-
-const x = {
-  name: "Blau Hoops",
-  type: "court",
-  sport: "basketball",
-  tags: ["basketball", "wieblingen", "metal net", "2 baskets"],
-};
-const y = {
-  name: "Open Hoops",
-  type: "court",
-  sport: "basketball",
-  tags: ["basketball", "kirchheim", "no net", "1 basket"],
-};
-const u = {
-  name: "Ninja Skates",
-  type: "skatepark",
-  sport: "skating",
-  tags: ["skatepark", "handschuhsheim", "hidden", "quiet"],
-};

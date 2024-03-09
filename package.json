@@ -1,0 +1,17 @@
+{
+  "name": "localmore",
+  "version": "1.0.0",
+  "description": "## Naming convention: - Variable (a thing): someSexy_WORD - Function (action): DO_thisThing",
+  "main": "index.js",
+  "scripts": {
+    "start-backend": "cd backend && npm run dev",
+    "start-frontend": "cd frontend && npm run dev",
+    "both": "concurrently \"npm run start-backend\" \"npm run start-frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
